@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* ========================css link=================== */
+/* ----------------------------------------- */
+:root{
+    --popins: "Poppins", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --brandcolor:#09cdfa;
+}
+body {
+    /* height: 100vh; */
+    background: #081c29 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container{
+    width: 1140px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+/* ---------------------------Navbar start---------------------------- */ 
+.main_manu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav{
+    display: flex;
+}
+.manu_img img{
+    width: 90px;
+    height: 90px;
+}
+li{
+    list-style: none;
+}
+.navbar_start ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    font-family: var(--popins);
+    position: relative;
+    text-decoration: none;
+}
+.navbar_start ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    background: var(--brandcolor);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:  transform  .4s;
+    transform-origin: right;
+}
+.navbar_start ul li a:hover::after,
+.navbar_start ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar_start ul{
+    gap: 60px;
+}
+
+/* ----------------------------------Navbar end-------------- */
+.main {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 4px 20px, rgba(0, 0, 0, 0.4) 0px 4px 10px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    color: var(--brandcolor);
+    margin-bottom: 50px;
+}
+.main h1 {
+    font-size: 24px;
+    font-family: "Afacad Flux", sans-serif;
+    color: #333;
+    margin-bottom: 17px;
+}
+
+.main input {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.main input::placeholder {
+    color: #aaa;
+}
+
+.main button {
+    background-color: var(--brandcolor);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s ease;
+    transition: all linear 0.2s;
+}
+
+.main button:hover {
+    background-color: #0056b3;
+}
+.main button:active{
+    transform: scale(1.1);
+}
+/* -------------------------------------------------- */
+.dd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.playerTwo{
+    display: none;
+}
+.playerThree{
+    display: none;
+}
+.error{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: red;
+}
+.winner h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--brandcolor);
+    text-align: center;
+}
+/* .winner img{
+    display: flex;
+    justify-content: center;
+} */
+.winner{
+
+    display: none;
+}
+.ChanceNumber {
+    width: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

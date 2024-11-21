@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-Syntax Error</title>
+    <link rel="icon" href="imge/bg-imge.png">
+    <link rel="stylesheet" href="to-do-css/style.css">
+</head>
+<body>
+   <!-- --------------------navbar-------------------- -->
+   <div class="container">
+    <nav class="navbar   navbar_start">
+      <div class="main_manu">
+
+        <a class=" manu_img" href="index.html"><img src="imge/logo.png" alt="logo"></a>
+        <div class=" Navbar" id="navbarNav">
+          <ul class="navbar-nav ">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link " href="gamee.html">Game</a>
+            <a class="nav-link active" href="todo.html">ToDo List</a>
+            <a class="nav-link" href="about.html">About Us</a>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div>
+   <!-- -----------------------navbar end---------------- -->
+        <div class="todo">
+            <h1>To-Do List</h1>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Your Text !">
+                <button onclick="addtask()">Add</button>
+            </div>
+            <div id="list-container">
+                <!-- <ul class="List">
+                    <li  class="checked">Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul> -->
+            </div>
+        </div>
+    <script src="to-do-js/script.js"></script>
+</body>
+</html>

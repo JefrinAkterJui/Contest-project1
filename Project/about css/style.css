@@ -1,0 +1,262 @@
+/* ========================css link=================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* ========================css link=================== */
+/* ========================common css part start=================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+:root{
+    --popins: "Poppins", sans-serif;
+    --brandcolor:#09cdfa;
+}
+
+/* ========================common css part ens======================*/
+/* ---------------------------Navbar start---------------------------- */ 
+.navbar{
+    background: #081c29;
+
+}
+.manu_img img{
+    width: 90px;
+    height: 90px;
+}
+.navbar_start ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff !important;
+    font-family: var(--popins);
+    position: relative;
+}
+.navbar_start ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    background: var(--brandcolor);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:  transform  .4s;
+    transform-origin: right;
+}
+.navbar_start ul li a:hover::after,
+.navbar_start ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar_start ul{
+    gap: 50px;
+}
+.button{
+    width: 114px;
+    height: 43px;
+    background: transparent;
+    border: 0.5px solid #09cdfa;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--popins);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.5s;
+}
+.button:hover{
+    background: var(--brandcolor);
+    color: #fff;
+}
+
+/* ----------------------------------Navbar end-------------- */
+#banner{
+    background: #081c29;
+
+}
+
+.banner_main_E h1{
+    width: 557px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 140px;
+}
+.banner_main_E  span{
+    color: #33708d !important;
+}
+.banner_main_E h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--brandcolor);
+}
+.banner_main_E P{
+    width: 400px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--popins);
+    color: #fff;
+    margin-top: 22px;
+}
+.banner_buttons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.banner_imge a{
+    background-repeat: no-repeat;
+    transition:1.5s;
+    cursor: default;
+    margin-left: 39px;
+}
+.banner_imge a:hover{
+    background: #081c29;
+    opacity: .10;
+}
+/* --------------------------- card part------------------------*/
+#card{
+    background: #081c29;
+
+}
+.sin_card {
+    position: absolute;
+    bottom: -104px;
+    left: 634px;
+}
+
+/* ----------- */
+.sin_card button {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    cursor: default;
+}
+
+.sin_card button span {
+    color: #164ca7;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.sin_card  button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+}
+
+.sin_card  button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes rotate624 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm1261 {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.sin_card  .btn-shine {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.sin_card  .btn-shine span {
+    z-index: 20;
+}
+
+.sin_card .btn-shine:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+.sin_card  .btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* ------------- */
+.main_card{
+    width: 300px;
+    height: 320px;
+    background:#fff ;
+    border-radius: 10px;
+    margin-top: 258px;
+}
+.imge img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

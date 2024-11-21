@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Syntax Error</title>
+    <link rel="icon" href="imge/bg-imge.png">
+    
+    <link rel="stylesheet" href="game-css/style.css">
+
+</head>
+<body>
+   <!-- -------------------------------Navbar------------------------ -->
+    <div class="container">
+      <nav class="navbar   navbar_start">
+        <div class="main_manu">
+
+          <a class=" manu_img" href="index.html"><img src="imge/logo.png" alt="logo"></a>
+          <div class=" Navbar" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="gamee.html">Game</a></li>
+              <li class="nav-item"><a class="nav-link" href="todo.html">ToDo List</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div>
+  <!-- -------------------------Game part strat------------------------ -->
+  <div class="dd">
+<h3>Number Guessing Game</h3>
+    <p class="error"></p>
+          <div class="main playerOne">
+              <h1 class="playerName">Player Number-1</h1>
+              <input  class="playerOneInput" type="number" onkeydown="OneEnter(event)" placeholder="Enter your number...">
+              <button  class="playerOneButton" onclick="POneClick()" >Go</button>
+          </div>
+          <!------------------------Player Two------------------------>
+          <div class="main playerTwo">
+              <p class="ChanceNumber"><span class="chanceCount"></span>/5</p>                                 
+              <h1 class="playerName">Palyer Number-2</h1>
+              <input  class="playerTwoInput" type="number" onkeydown="TowEnter(event)" placeholder="Enter your number...">
+              <button  class="playerTwoButton" onclick="PtowClick()">Go</button>
+          </div>
+          <!-------------------------Player Three--------------------->
+          <div class="main playerThree">
+              <p class="ChanceNumber"><span class="chanceCount2"></span>/5</p>                                 
+              <h1 class="playerName">Player Number-3</h1>
+              <input  class="playerThreeInput" type="number" onkeydown="ThreeEnter(event)" placeholder="Enter your number...">
+              <button  class="playerThreeButton" onclick="PthreeCilck()">Go</button>
+          </div>
+          <div class="winner">
+              <img src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-137.gif" alt="winner">
+              <h2 class="winner_result"></h2>
+          </div>
+        </div>
+      </div>
+  </div>      
+               
+
+     <script src="game-js/script.js"></script>
+</body>
+</html>
